@@ -1,0 +1,81 @@
+<h2>WELCOME TO ONLINE FOOD STORE.</h2>
+
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[0]">
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[1]">
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[2]">
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[3]">
+    </div>
+  </ng-template>
+
+</ngb-carousel>
+
+
+<div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="menu-section-heading">EXPLORE FOOD</h2>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/Images/coffee-1.jpg" class="menu-item-image w-100" />
+          <h2 class="menu-card-title">COFFEE</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/Images/burger-1.jpg" class="menu-item-image w-100" />
+          <h2 class="menu-card-title">BURGER</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/Images/fries-1.jpg" class="menu-item-image w-100" />
+          <h2 class="menu-card-title">FRENCH FRIES</h2>
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/Images/momo-1.jpeg" class="menu-item-image w-100" />
+          <h2 class="menu-card-title">MOMOS</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/Images/pizza-1.jpg" class="menu-item-image w-100" />
+          <h2 class="menu-card-title">PIZZA</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/Images/sandwich-2.jpg" class="menu-item-image w-100" />
+          <h2 class="menu-card-title">SANDWICH</h2>
+        </div>
+    </div>
+  </div>
+</div> 

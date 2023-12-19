@@ -1,0 +1,72 @@
+<!-- this is for add food items -->
+
+<br />
+<div class="main add-food-tab" style="background-color: white;">
+
+<div class="centered">
+    <h1>Add Food Items</h1>
+</div>
+<br />
+<div class="centered">
+<table >
+    <tr>
+        <td>Food Name</td>
+        <td>
+            <input type="text" [(ngModel)]="foodname" />
+        </td>
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>
+            <select [(ngModel)]="category">
+                <option *ngFor="let food of getCategoryList" [value]="food?.value">{{food?.name}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td>
+            <input type="text" [(ngModel)]="image"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+            <input type="text" [(ngModel)]="description"/>
+        </td>
+    </tr>
+    <!-- <tr>
+        <td>Mesurment</td>
+        <td>
+            <select [(ngModel)]="mesurement">
+                <option [value]="'kg'">KiloGram</option>
+                <option [value]="'g'">Gram</option>
+                <option [value]="'liter'">Liter</option>
+            </select>
+        </td>
+    </tr> -->
+    <tr>
+        <td>Mrp Price</td>
+        <td>
+            <input type="number" [(ngModel)]="mrpPrice"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>
+            <input type="number" [(ngModel)]="quantity"/>
+        </td>
+    </tr>
+    
+    
+
+    <!-- <tr>
+        <td colspan="2">
+            <button (click)="onAddProduct()"  mat-raised-button color="primary">{{ isEdit ? 'Update' : 'Add Product'}}</button>
+        </td>
+    </tr> -->
+</table>
+</div>
+<br />
+<div class="centered"><button (click)="onAddFood()"  mat-raised-button color="primary" style="background-color: rgb(72, 16, 85) ;color:rgb(249, 229, 254);">{{ isEdit ? 'Update' : 'Add FoodItem'}}</button></div>
+</div>
